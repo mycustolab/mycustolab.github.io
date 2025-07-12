@@ -1,9 +1,10 @@
+/* Fond stylisé + style général */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background: url("fond_stylise_mycustolab.png") no-repeat center center fixed;
   background-size: cover;
-  color: #222;
+  color: #111;
   text-align: center;
 }
 
@@ -12,12 +13,14 @@ body {
   padding: 2em;
 }
 
+/* Logo */
 .logo {
   width: 200px;
   margin: 2em auto;
   display: block;
 }
 
+/* Titres et texte */
 h1 {
   font-size: 1.8em;
   margin-bottom: 0.5em;
@@ -29,6 +32,7 @@ p {
   margin-bottom: 1.5em;
 }
 
+/* Galerie mockups */
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -42,13 +46,14 @@ p {
   height: auto;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
 }
 
 .gallery img:hover {
   transform: scale(1.05);
 }
 
+/* Slogan */
 .slogan {
   font-weight: bold;
   font-size: 1.3em;
@@ -56,6 +61,7 @@ p {
   color: #222;
 }
 
+/* Réseaux sociaux */
 .social-icons {
   margin-top: 2em;
 }
@@ -77,4 +83,21 @@ p {
 .social-icons img:hover {
   transform: scale(1.2);
   filter: brightness(1.2);
+}
+
+/* Animation d’entrée */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeSlideUp 1.2s ease-out forwards;
 }
