@@ -1,0 +1,48 @@
+styles.cssfooter {
+  margin-top: 3em;
+}
+
+.social-icons {
+  margin-top: 1em;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img {
+  width: 36px;
+  height: 36px;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(-40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .gallery img {
+    width: 90%;
+  }
+
+  .logo {
+    width: 160px;
+  }
+
+  .qr-code {
+    width: 80px;
+  }
+}
