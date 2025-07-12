@@ -1,86 +1,76 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MYCUSTO'LAB - Site en préparation</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MYCUSTO'LAB</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f7f7f7;
       margin: 0;
-      padding: 0;
-      text-align: center;
+      font-family: Arial, sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: #333;
+      text-align: center;
     }
     header {
-      background: #000;
-      color: #fff;
-      padding: 20px 10px;
+      background-color: black;
+      color: white;
+      padding: 20px 0;
     }
     header h1 {
       margin: 0;
-      font-size: 2.2em;
     }
-    .tagline {
-      font-size: 1.2em;
-      margin-top: 5px;
-      color: #fcd203;
+    header p {
+      color: #f9c400;
+      margin: 5px 0 0;
     }
     .content {
-      padding: 30px 20px;
+      padding: 20px;
     }
     .content h2 {
-      font-size: 1.8em;
+      font-size: 24px;
+      margin-bottom: 10px;
     }
     .mockups {
-      margin: 30px auto;
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 20px;
+      margin: 20px 0;
     }
     .mockups img {
       max-width: 200px;
-      height: auto;
-      border-radius: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
-    .qr-code {
-      margin: 30px auto 10px;
-    }
-    .btn-follow {
+    .btn {
       display: inline-block;
-      margin-top: 15px;
-      padding: 12px 24px;
-      background-color: #000;
-      color: #fff;
+      background: black;
+      color: white;
+      padding: 12px 20px;
       text-decoration: none;
-      font-weight: bold;
       border-radius: 6px;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>MYCUSTO'LAB</h1>
-    <div class="tagline">Crée. Personnalise. Affiche.</div>
+    <p>Crée. Personnalise. Affiche.</p>
   </header>
-
   <div class="content">
-    <h2>🛠️ Le site est en préparation</h2>
-    <p>En attendant, découvrez nos créations !</p>
-
+    <h2>🔧 Le site est en préparation</h2>
+    <p>En attendant, découvrez nos créations :</p>
     <div class="mockups">
-      <img src="mockup-mug.jpg" alt="Mockup Mug">
-      <img src="mockup-tshirt.jpg" alt="Mockup T-shirt">
-      <img src="mockup-bouteille.jpg" alt="Mockup Bouteille">
+      <img src="mockup_mug.jpg" alt="Mockup Mug" />
+      <img src="mockup_tshirt.jpg" alt="Mockup T-shirt" />
+      <img src="mockup_bottle.jpg" alt="Mockup Bouteille" />
+      <img src="mockup_box.jpg" alt="Mockup Packaging" />
+      <img src="qr_facebook.png" alt="QR vers Facebook" />
     </div>
-
-    <div class="qr-code">
-      <img src="qr-facebook.png" alt="QR Code vers Facebook" width="130">
-    </div>
-
-    <a href="https://www.facebook.com/share/1C25" target="_blank" class="btn-follow">Nous suivre sur Facebook</a>
+    <a class="btn" href="https://www.facebook.com/share/1C25" target="_blank">Nous suivre sur Facebook</a>
   </div>
 </body>
 </html>
