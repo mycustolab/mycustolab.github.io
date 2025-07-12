@@ -1,76 +1,38 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MYCUSTO'LAB</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: url('background.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #333;
-      text-align: center;
-    }
-    header {
-      background-color: black;
-      color: white;
-      padding: 20px 0;
-    }
-    header h1 {
-      margin: 0;
-    }
-    header p {
-      color: #f9c400;
-      margin: 5px 0 0;
-    }
-    .content {
-      padding: 20px;
-    }
-    .content h2 {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-    .mockups {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin: 20px 0;
-    }
-    .mockups img {
-      max-width: 200px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
-    .btn {
-      display: inline-block;
-      background: black;
-      color: white;
-      padding: 12px 20px;
-      text-decoration: none;
-      border-radius: 6px;
-      margin-top: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>MYCUSTO'LAB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('assets/fond-couleur.jpg') no-repeat center center fixed;
+            background-size: cover;
+            text-align: center;
+            padding: 20px;
+            color: #333;
+        }
+        .mockup {
+            max-width: 200px;
+            margin: 10px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>MYCUSTO'LAB</h1>
-    <p>Crée. Personnalise. Affiche.</p>
-  </header>
-  <div class="content">
-    <h2>🔧 Le site est en préparation</h2>
+    <h1>🔧 MYCUSTO'LAB</h1>
+    <h2>Le site est en préparation</h2>
     <p>En attendant, découvrez nos créations :</p>
-    <div class="mockups">
-      <img src="mockup_mug.jpg" alt="Mockup Mug" />
-      <img src="mockup_tshirt.jpg" alt="Mockup T-shirt" />
-      <img src="mockup_bottle.jpg" alt="Mockup Bouteille" />
-      <img src="mockup_box.jpg" alt="Mockup Packaging" />
-      <img src="qr_facebook.png" alt="QR vers Facebook" />
+    <div>
+        <img src="assets/mug.jpg" alt="Mockup Mug" class="mockup">
+        <img src="assets/tshirt.jpg" alt="Mockup T-shirt" class="mockup">
+        <img src="assets/bouteille.jpg" alt="Mockup Bouteille" class="mockup">
+        <img src="assets/packaging.jpg" alt="Mockup Packaging" class="mockup">
+        <img src="assets/qr-facebook.png" alt="QR vers Facebook" class="mockup">
     </div>
-    <a class="btn" href="https://www.facebook.com/share/1C25" target="_blank">Nous suivre sur Facebook</a>
-  </div>
+    <br>
+    <a href="https://www.facebook.com/share/1C25" target="_blank">
+        <button>Nous suivre sur Facebook</button>
+    </a>
 </body>
 </html>
