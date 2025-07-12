@@ -1,63 +1,44 @@
-/* Structure générale */
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #fdf9f5;
-  color: #1a1a1a;
-  text-align: center;
-  animation: fadeIn 1s ease-in;
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MYCUSTO'LAB - En préparation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="logo_mycustolab.png" alt="Logo MYCUSTO'LAB" class="logo" style="width: 200px; margin-top: 2em;">
+  </header>
 
-h1 {
-  font-size: 2.5em;
-  margin-top: 1em;
-  animation: slideIn 0.8s ease-in-out;
-}
+  <main>
+    <h1>Le labo de vos idées créatives en construction et trés bientôt en ligne</h1>
+    <p>En attendant, découvrez nos toutes premières créations :</p>
 
-h2 {
-  font-size: 1.5em;
-  color: #333;
-  margin-top: 0.5em;
-}
+    <section class="gallery">
+      <img src="mug mockup logo.png" alt="Mug MYCUSTO'LAB">
+      <img src="tee shirt mockup logo.png" alt="Tee-shirt MYCUSTO'LAB">
+      <img src="bottle mockup logo.png" alt="Bouteille MYCUSTO'LAB">
+      <img src="packaging mockup logo.png" alt="Packaging MYCUSTO'LAB">
+      <img src="qr_mycustolab_facebook.png" alt="QR Facebook">
+      <img src="file_0000000c3186243aa70cd224aa86ad2.png" alt="Boîte aux lettres MYCUSTO'LAB">
+    </section>
 
-/* Logo */
-.logo {
-  width: 280px;
-  max-width: 90%;
-  margin-top: 1.5em;
-  animation: slideIn 1s ease-in-out;
-}
+    <p class="slogan">Exprime ta créativité, on imprime ta réalité</p>
 
-/* Slogan */
-.slogan {
-  font-size: 1.8em;
-  font-weight: bold;
-  margin: 1em 0;
-  color: #ff6600;
-  animation: fadeIn 2s ease-in-out;
-}
+    <div class="social-icons">
+      <p>Envie de nous suivre ? Retrouvez-nous sur :</p>
+      <a href="https://www.facebook.com/share/1C25gN6R1sh7q6J7/" target="_blank">
+        <img src="facebook-icon.png" alt="Facebook">
+      </a>
+      <a href="#">
+        <img src="tiktok-icon.png" alt="TikTok">
+      </a>
+      <a href="#">
+        <img src="instagram-icon.png" alt="Instagram">
+      </a>
+    </div>
+  </main>
 
-/* Texte de préparation */
-.preparation-text {
-  font-size: 1.3em;
-  margin: 1em auto;
-  max-width: 600px;
-  animation: fadeIn 2s ease-in-out;
-}
-
-/* Galerie de mockups */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 2em;
-}
-
-.gallery img {
-  width: 200px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-  animation: fadeIn 2s ease;
+</body>
+</html>
