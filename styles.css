@@ -1,48 +1,43 @@
-styles.cssfooter {
-  margin-top: 3em;
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MYCUSTO'LAB - Site en préparation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-.social-icons {
-  margin-top: 1em;
-}
+  <div style="text-align:center; animation: slideIn 1s ease;">
+    <img src="file_0000000c3186243aa70cd224aa86ad2.png" alt="Logo MYCUSTO'LAB" class="logo" width="250">
+    <h2>Le labo de vos idées créatives est bientôt en ligne</h2>
+    <img src="qr_mycustolab_facebook.png" alt="QR Code Facebook" class="qr-code" width="100">
+  </div>
 
-.social-icons a {
-  display: inline-block;
-  margin: 0 10px;
-  transition: transform 0.3s ease;
-}
+  <h3 style="text-align:center; margin-top: 40px;">NOS TOUT PREMIERS PROJETS</h3>
 
-.social-icons img {
-  width: 36px;
-  height: 36px;
-}
+  <div class="gallery" style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px; margin-top:20px; animation: fadeIn 1.5s ease;">
+    <img src="mug mockup logo.png" alt="Mug personnalisé" width="200">
+    <img src="tee shirt mockup logo.png" alt="T-shirt personnalisé" width="200">
+    <img src="bottle mockup logo.png" alt="Bouteille personnalisée" width="200">
+    <img src="packaging mockup logo.png" alt="Packaging personnalisé" width="200">
+    <img src="20250712_112227.jpg" alt="Tasse MYCUSTO'LAB" width="200">
+    <img src="20250712_112455.jpg" alt="Boîte aux lettres MYCUSTO'LAB" width="200">
+  </div>
 
-.social-icons a:hover {
-  transform: scale(1.2);
-}
+  <footer style="text-align:center; margin-top:50px;" class="footer">
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/1C25" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+      </a>
+      <a href="https://www.tiktok.com/@mycustolab" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok">
+      </a>
+      <a href="https://www.instagram.com/mycustolab" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+      </a>
+    </div>
+  </footer>
 
-/* Animations */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes slideIn {
-  from { opacity: 0; transform: translateY(-40px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Responsive */
-@media screen and (max-width: 600px) {
-  .gallery img {
-    width: 90%;
-  }
-
-  .logo {
-    width: 160px;
-  }
-
-  .qr-code {
-    width: 80px;
-  }
-}
+</body>
+</html>
