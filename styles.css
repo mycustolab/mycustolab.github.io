@@ -1,39 +1,86 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MYCUSTO'LAB - En préparation</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <img src="logo_mycustolab.png" alt="Logo MYCUSTO'LAB" class="logo fade-in">
-  </header>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <main>
-    <h1 class="fade-in">Le labo de vos idées créatives est bientôt en ligne</h1>
-    <p class="fade-in">En attendant, découvrez nos toutes premières créations :</p>
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  background-color: #f8f8f8;
+}
 
-    <section class="gallery fade-in">
-      <img src="20250712_112227.jpg" alt="Mockup 1 supplémentaire">
-      <img src="20250712_112455.jpg" alt="Mockup 2 supplémentaire">
-    </section>
+.background {
+  background: url('fond_stylise_mycustolab.png') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 2em;
+}
 
-    <p class="slogan fade-in">Exprime ta créativité, on imprime ta réalité</p>
+.main-visual {
+  display: block;
+  max-width: 90%;
+  margin: 0 auto 2em auto;
+}
 
-    <div class="social-icons fade-in">
-      <p>Envie de nous suivre ? Retrouvez-nous sur :</p>
-      <a href="https://www.facebook.com/share/1C25gN6R1sh7q6J7/" target="_blank">
-        <img src="facebook-icon.png" alt="Facebook">
-      </a>
-      <a href="#" target="_blank">
-        <img src="tiktok-icon.png" alt="TikTok">
-      </a>
-      <a href="#" target="_blank">
-        <img src="instagram-icon.png" alt="Instagram">
-      </a>
-    </div>
-  </main>
-</body>
-</html>
+h1 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #000;
+  margin-bottom: 0.5em;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 1.5em;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+.gallery img {
+  max-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.slogan {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #000;
+  margin: 2em 0 1em 0;
+}
+
+.social {
+  text-align: center;
+}
+
+.follow-text {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+.icons img {
+  width: 40px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.icons img:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
