@@ -1,44 +1,80 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MYCUSTO'LAB - En préparation</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <img src="logo_mycustolab.png" alt="Logo MYCUSTO'LAB" class="logo" style="width: 200px; margin-top: 2em;">
-  </header>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url("fond_stylise_mycustolab.png") no-repeat center center fixed;
+  background-size: cover;
+  color: #222;
+  text-align: center;
+}
 
-  <main>
-    <h1>Le labo de vos idées créatives en construction et trés bientôt en ligne</h1>
-    <p>En attendant, découvrez nos toutes premières créations :</p>
+.background-overlay {
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 2em;
+}
 
-    <section class="gallery">
-      <img src="mug mockup logo.png" alt="Mug MYCUSTO'LAB">
-      <img src="tee shirt mockup logo.png" alt="Tee-shirt MYCUSTO'LAB">
-      <img src="bottle mockup logo.png" alt="Bouteille MYCUSTO'LAB">
-      <img src="packaging mockup logo.png" alt="Packaging MYCUSTO'LAB">
-      <img src="qr_mycustolab_facebook.png" alt="QR Facebook">
-      <img src="file_0000000c3186243aa70cd224aa86ad2.png" alt="Boîte aux lettres MYCUSTO'LAB">
-    </section>
+.logo {
+  width: 200px;
+  margin: 2em auto;
+  display: block;
+}
 
-    <p class="slogan">Exprime ta créativité, on imprime ta réalité</p>
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+  color: #111;
+}
 
-    <div class="social-icons">
-      <p>Envie de nous suivre ? Retrouvez-nous sur :</p>
-      <a href="https://www.facebook.com/share/1C25gN6R1sh7q6J7/" target="_blank">
-        <img src="facebook-icon.png" alt="Facebook">
-      </a>
-      <a href="#">
-        <img src="tiktok-icon.png" alt="TikTok">
-      </a>
-      <a href="#">
-        <img src="instagram-icon.png" alt="Instagram">
-      </a>
-    </div>
-  </main>
+p {
+  font-size: 1.1em;
+  margin-bottom: 1.5em;
+}
 
-</body>
-</html>
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  margin: 2em 0;
+}
+
+.gallery img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.slogan {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin: 2em 0;
+  color: #222;
+}
+
+.social-icons {
+  margin-top: 2em;
+}
+
+.social-icons p {
+  font-size: 1.1em;
+  margin-bottom: 0.8em;
+  color: #111;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
