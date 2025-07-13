@@ -1,46 +1,37 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MYCUSTO'LAB - Coming Soon</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MYCUSTO'LAB - Site Officiel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f6f6f6;
+      color: #333;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <img src="mycustolabcleanedcoverqr.png" alt="MYCUSTO'LAB visuel principal" class="main-visual fade-in-up delay-1" />
 
-    <h1 class="fade-in-up delay-2">Le labo de vos idées créatives très bientôt en ligne</h1>
-
-    <div class="creations fade-in-up delay-3">
-      <img src="20250712_112227.jpg" alt="Mug MYCUSTO'LAB" />
-      <img src="20250712_112455.jpg" alt="Plaque boîte aux lettres personnalisée" />
-    </div>
-
-    <p class="slogan fade-in-up delay-4">Exprime ta créativité, on imprime ta réalité</p>
-
-    <div class="bio fade-in-up delay-4">
-      <p>
-        Chez <strong>MYCUSTO'LAB</strong>, on crée, on teste, on imprime…  
-        et surtout, on partage la passion de la personnalisation.  
-        Des cadeaux uniques, des objets fun, un style à votre image.  
-        🎨 Vous pouvez créer votre propre design ou choisir parmi nos modèles maison.  
-        <strong>Bienvenue dans notre labo créatif.</strong>
+  <!-- SECTION À PROPOS -->
+  <section style="position: relative; padding: 60px 20px; background: url('assets/fond_background_apropos_mycustolab.png') center/cover no-repeat; color: white;">
+    <div style="max-width: 900px; margin: auto; background-color: rgba(0,0,0,0.6); border-radius: 20px; padding: 40px 30px; box-shadow: 0 10px 25px rgba(0,0,0,0.4); animation: fadeIn 1s ease-in-out;">
+      <h2 style="font-size: 2.5em; margin-bottom: 20px; text-align: center; font-family: 'Montserrat', sans-serif;">🧪 À propos de MYCUSTO’LAB</h2>
+      <p style="font-size: 1.2em; line-height: 1.6; text-align: center;">
+        Bienvenue dans notre laboratoire de personnalisation 100 % créatif !<br><br>
+        Chez <strong>MYCUSTO’LAB</strong>, chaque création est unique : mugs, t-shirts, plaques, bouteilles… tout est personnalisable à l’image de votre style.<br><br>
+        On mélange idées fun, design décalé et sublimation de qualité pour faire de vos objets du quotidien des pièces qui vous ressemblent.<br><br>
+        🎨 Créez, imaginez, et laissez-nous faire le reste !
       </p>
     </div>
+  </section>
 
-    <div class="socials fade-in-up delay-5">
-      <p class="follow">Envie de nous suivre ? Retrouvez-nous sur :</p>
-      <a href="https://www.facebook.com/share/1C25" target="_blank">
-        <img src="facebook_icon.png" alt="Facebook" />
-      </a>
-      <a href="#">
-        <img src="tiktok_icon.png" alt="TikTok" />
-      </a>
-      <a href="#">
-        <img src="instagram_icon.png" alt="Instagram" />
-      </a>
-    </div>
-  </div>
 </body>
 </html>
