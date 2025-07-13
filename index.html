@@ -5,17 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MYCUSTO'LAB - Site Officiel</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
   <style>
-    @keyframes fadeIn {
-      0% { opacity: 0; transform: translateY(30px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
     body {
       margin: 0;
       font-family: 'Open Sans', sans-serif;
       background: url('fond_stylise.png') center/cover no-repeat;
       color: white;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
     .social-icons img {
       width: 32px;
@@ -33,16 +32,40 @@
       width: 100%;
       border-radius: 15px;
       box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      animation: fadeIn 1s ease-in-out;
+    }
+    .apropos {
+      background: url('fond_background_apropos_mycustolab.png') center/cover no-repeat;
+      padding: 60px 20px;
+    }
+    .apropos-content {
+      max-width: 900px;
+      margin: auto;
+      background-color: rgba(0,0,0,0.6);
+      border-radius: 20px;
+      padding: 40px 30px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      animation: fadeIn 1s ease-in-out;
+    }
+    .qr-section {
+      text-align: center;
+      margin: 40px 0;
+      animation: fadeIn 1s ease-in-out;
+    }
+    .qr-section img {
+      width: 180px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     }
   </style>
 </head>
 <body>
 
   <!-- HEADER -->
-  <header style="text-align: center; padding: 80px 20px 40px;">
+  <header style="text-align: center; padding: 80px 20px 20px; animation: fadeIn 1s ease-in-out;">
     <img src="mycustolabcleanedcoverqr.png" alt="MYCUSTO'LAB logo" style="max-width: 300px; width: 90%;">
-    <h1 style="font-size: 2em; font-family: 'Montserrat', sans-serif; margin: 10px 0 5px;">Exprime ta réalité, on réalise ta réalité</h1>
-    <p style="font-size: 1.1em;">Site en préparation</p>
+    <h1 style="font-size: 2em; font-family: 'Montserrat', sans-serif; margin: 10px 0 5px;">Exprime ta créativité, on réalise ta réalité</h1>
+    <p style="font-size: 1.1em;">Le site e-commerce est en construction et sera très bientôt disponible 🚀</p>
   </header>
 
   <!-- RÉSEAUX SOCIAUX -->
@@ -50,6 +73,12 @@
     <a href="https://www.facebook.com/share/1C25" target="_blank"><img src="facebook_icon.png" alt="Facebook"></a>
     <a href="#"><img src="instagram_icon.png" alt="Instagram"></a>
     <a href="#"><img src="tiktok_icon.png" alt="TikTok"></a>
+  </div>
+
+  <!-- QR CODE SECTION -->
+  <div class="qr-section">
+    <p style="font-size: 1.1em; font-weight: bold; margin-bottom: 15px;">Scanne-moi pour suivre nos actus !</p>
+    <img src="qrcode_facebook.png" alt="QR Code Facebook">
   </div>
 
   <!-- GALERIE PRODUITS -->
@@ -60,8 +89,8 @@
   </section>
 
   <!-- SECTION À PROPOS -->
-  <section style="position: relative; padding: 60px 20px; background: url('fond_background_apropos_mycustolab.png') center/cover no-repeat;">
-    <div style="max-width: 900px; margin: auto; background-color: rgba(0,0,0,0.6); border-radius: 20px; padding: 40px 30px; box-shadow: 0 10px 25px rgba(0,0,0,0.4); animation: fadeIn 1s ease-in-out;">
+  <section class="apropos">
+    <div class="apropos-content">
       <h2 style="font-size: 2.5em; margin-bottom: 20px; text-align: center; font-family: 'Montserrat', sans-serif;">🧪 À propos de MYCUSTO’LAB</h2>
       <p style="font-size: 1.2em; line-height: 1.6; text-align: center;">
         Bienvenue dans notre laboratoire de personnalisation 100 % créatif !<br><br>
