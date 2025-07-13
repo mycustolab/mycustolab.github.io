@@ -1,7 +1,189 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MYCUSTO'LAB - Site en préparation</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('fond_stylise.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+    }
+    .main-cover {
+      width: 100%;
+      max-height: 600px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px 10px;
+      animation: fadeIn 1s ease-in-out;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    header p.slogan {
+      font-size: 1.5rem;
+      margin: 10px 0 0;
+    }
+    header p.info {
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+    .social-icons {
+      margin-top: 20px;
+    }
+    .social-icons img {
+      width: 40px;
+      margin: 0 10px;
+      vertical-align: middle;
+    }
+    section.qr-section, section.produits, section.apropos, section.newsletter {
+      padding: 40px 20px;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+    .qr-section img {
+      max-width: 180px;
+      height: auto;
+      margin-top: 10px;
+    }
+    .produits h2, .apropos h2, .newsletter h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+    .galerie {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    .galerie img {
+      height: 220px;
+      width: auto;
+      object-fit: contain;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .apropos {
+      background-image: url('fond_background_apropos_mycustolab.png');
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+    .apropos .contenu {
+      max-width: 700px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 30px;
+      border-radius: 12px;
+    }
+    .apropos p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .newsletter input[type=email] {
+      padding: 10px;
+      width: 280px;
+      max-width: 90%;
+      border: none;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    .newsletter button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #ff914d;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .messaging-buttons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 10;
+    }
+    .messaging-buttons a img {
+      width: 50px;
+      height: 50px;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="mycustolabcleanedcoverqr.png" alt="MYCUSTO'LAB Visuel principal" class="main-cover">
+
+  <header>
+    <h1>MYCUSTO'LAB</h1>
+    <p class="slogan">Exprime ta créativité, on réalise ta réalité</p>
+    <p class="info">Notre site e-commerce est en construction et sera très bientôt disponible.</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=61558012416694" target="_blank"><img src="facebook_icon.png" alt="Facebook"></a>
+      <a href="#"><img src="instagram_icon.png" alt="Instagram"></a>
+    </div>
+  </header>
+
+  <section class="qr-section">
+    <p>Scanne-moi pour suivre nos actus !</p>
+    <img src="qr_mycustolab_facebook.png" alt="QR Code Facebook">
+  </section>
+
+  <section class="produits">
+    <h2>Quelques créations signées MYCUSTO'LAB</h2>
+    <div class="galerie">
+      <img src="20250712_112227.jpg" alt="Plaque personnalisée boîte aux lettres">
+      <img src="20250712_112455.jpg" alt="Plaque boîte aux lettres zoom">
+      <img src="tasse apero 1.jpg" alt="Tasse personnalisée apéro 1">
+      <img src="tasse apero 2.jpg" alt="Tasse personnalisée apéro 2">
+      <img src="tasse apero 3.jpg" alt="Tasse personnalisée apéro 3">
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <h2>📬 Reste informé(e) du lancement</h2>
+    <form action="mailto:grem86@outlook.com" method="POST" enctype="text/plain">
+      <input type="email" name="email" placeholder="Votre adresse email" required><br>
+      <button type="submit">Je m’inscris</button>
+    </form>
+  </section>
+
+  <section class="apropos">
+    <div class="contenu">
+      <h2>À propos de MYCUSTO'LAB</h2>
+      <p>Bienvenue dans l’univers MYCUSTO'LAB, l’atelier de customisation 100 % créatif !</p>
+      <p>Chez MYCUSTO’LAB, chaque expérience est unique : mugs, plaques, textiles et bien plus encore. Vous choisissez ou créez votre design, on le réalise avec passion.</p>
+      <p>On mélange fun, style, et qualité artisanale pour créer des pièces personnalisées qui ne ressemblent qu’à vous.</p>
+      <p>🎨 Testez, imaginez, customisez — ici, c’est vous le créateur !</p>
+    </div>
+  </section>
+
+  <div class="messaging-buttons">
+    <a href="https://wa.me/32471733371" target="_blank"><img src="whatsapp_icon.png" alt="WhatsApp"></a>
+    <a href="https://m.me/gremceunen?hash=Aba9TT2pTzJVay-r&source=qr_link_share" target="_blank"><img src="messenger_icon.png" alt="Messenger"></a>
+  </div>
+
+</body>
+</html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MYCUSTO'LAB - Site en préparation</title>
   <link rel="stylesheet" href="styles.css">
