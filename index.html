@@ -3,102 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MYCUSTO'LAB - Site Officiel</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <title>MYCUSTO'LAB - Site en préparation</title>
+  <link rel="stylesheet" href="styles.css">
   <style>
     body {
       margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      background: url('fond_stylise.png') center/cover no-repeat;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('fond_stylise.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
       color: white;
     }
-    @keyframes fadeIn {
-      0% { opacity: 0; transform: translateY(30px); }
-      100% { opacity: 1; transform: translateY(0); }
+    header {
+      text-align: center;
+      padding: 80px 20px 30px;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    header p.slogan {
+      font-size: 1.5rem;
+      margin: 10px 0 0;
+    }
+    header p.info {
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+    .social-icons {
+      margin-top: 20px;
     }
     .social-icons img {
-      width: 32px;
+      width: 40px;
       margin: 0 10px;
+      vertical-align: middle;
     }
-    .gallery {
+    section.qr-section, section.produits, section.apropos {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .qr-section img {
+      max-width: 180px;
+      height: auto;
+      margin-top: 10px;
+    }
+    .produits h2, .apropos h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+    .galerie {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
-      padding: 20px;
+      gap: 15px;
     }
-    .gallery img {
-      max-width: 300px;
-      width: 100%;
-      border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-      animation: fadeIn 1s ease-in-out;
+    .galerie img {
+      max-width: 260px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
     .apropos {
-      background: url('fond_background_apropos_mycustolab.png') center/cover no-repeat;
-      padding: 60px 20px;
+      background-image: url('fond_background_apropos_mycustolab.png');
+      background-size: cover;
+      background-position: center;
+      color: white;
     }
-    .apropos-content {
-      max-width: 900px;
+    .apropos .contenu {
+      max-width: 700px;
       margin: auto;
-      background-color: rgba(0,0,0,0.6);
-      border-radius: 20px;
-      padding: 40px 30px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-      animation: fadeIn 1s ease-in-out;
-    }
-    .qr-section {
-      text-align: center;
-      margin: 40px 0;
-      animation: fadeIn 1s ease-in-out;
-    }
-    .qr-section img {
-      width: 180px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 30px;
       border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    .apropos p {
+      font-size: 1rem;
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
-
-  <!-- HEADER -->
-  <header style="text-align: center; padding: 80px 20px 20px; animation: fadeIn 1s ease-in-out;">
-    <img src="mycustolabcleanedcoverqr.png" alt="MYCUSTO'LAB logo" style="max-width: 300px; width: 90%;">
-    <h1 style="font-size: 2em; font-family: 'Montserrat', sans-serif; margin: 10px 0 5px;">Exprime ta créativité, on réalise ta réalité</h1>
-    <p style="font-size: 1.1em;">Le site e-commerce est en construction et sera très bientôt disponible 🚀</p>
+  <header>
+    <h1>MYCUSTO'LAB</h1>
+    <p class="slogan">Exprime ta créativité, on réalise ta réalité</p>
+    <p class="info">Notre site e-commerce est en construction et sera très bientôt disponible.</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=61558012416694" target="_blank"><img src="facebook_icon.png" alt="Facebook"></a>
+      <a href="#"><img src="instagram_icon.png" alt="Instagram"></a>
+    </div>
   </header>
 
-  <!-- RÉSEAUX SOCIAUX -->
-  <div style="text-align: center; margin-bottom: 30px;" class="social-icons">
-    <a href="https://www.facebook.com/share/1C25" target="_blank"><img src="facebook_icon.png" alt="Facebook"></a>
-    <a href="#"><img src="instagram_icon.png" alt="Instagram"></a>
-  </div>
-
-  <!-- QR CODE SECTION -->
-  <div class="qr-section">
-    <p style="font-size: 1.1em; font-weight: bold; margin-bottom: 15px;">Scanne-moi pour suivre nos actus !</p>
-    <img src="qr_mycustolab_facebook" alt="QR Code Facebook">
-  </div>
-
-  <!-- GALERIE PRODUITS -->
-  <section class="gallery">
-    <img src="20250712_112227.jpg" alt="Mug personnalisé">
-    <img src="20250712_112455.jpg" alt="Mug apéro côté">
-    <img src="mycustolabcleanedcoverqr.png" alt="Mockup global produits">
+  <section class="qr-section">
+    <p>Scanne-moi pour suivre nos actus !</p>
+    <img src="qr_mycustolab_facebook.png" alt="QR Code Facebook">
   </section>
 
-  <!-- SECTION À PROPOS -->
-  <section class="apropos">
-    <div class="apropos-content">
-      <h2 style="font-size: 2.5em; margin-bottom: 20px; text-align: center; font-family: 'Montserrat', sans-serif;">🧪 À propos de MYCUSTO’LAB</h2>
-      <p style="font-size: 1.2em; line-height: 1.6; text-align: center;">
-        Bienvenue dans notre laboratoire de personnalisation 100 % créatif !<br><br>
-        Chez <strong>MYCUSTO’LAB</strong>, chaque création est unique : mugs, t-shirts, plaques, bouteilles… tout est personnalisable à l’image de votre style.<br><br>
-        On mélange idées fun, design décalé et sublimation de qualité pour faire de vos objets du quotidien des pièces qui vous ressemblent.<br><br>
-        🎨 Créez, imaginez, et laissez-nous faire le reste !
-      </p>
+  <section class="produits">
+    <h2>Quelques créations signées MYCUSTO'LAB</h2>
+    <div class="galerie">
+      <img src="20250712_112227.jpg" alt="Plaque personnalisée boîte aux lettres">
+      <img src="20250712_112455.jpg" alt="Plaque boîte aux lettres zoom">
+      <img src="tasse apero 1.jpg" alt="Tasse personnalisée apéro 1">
+      <img src="tasse apero 2.jpg" alt="Tasse personnalisée apéro 2">
+      <img src="tasse apero 3.jpg" alt="Tasse personnalisée apéro 3">
     </div>
   </section>
 
+  <section class="apropos">
+    <div class="contenu">
+      <h2>À propos de MYCUSTO'LAB</h2>
+      <p>Bienvenue dans l’univers MYCUSTO'LAB, l’atelier de customisation 100 % créatif !</p>
+      <p>Chez MYCUSTO’LAB, chaque expérience est unique : mugs, plaques, textiles et bien plus encore. Vous choisissez ou créez votre design, on le réalise avec passion.</p>
+      <p>On mélange fun, style, et qualité artisanale pour créer des pièces personnalisées qui ne ressemblent qu’à vous.</p>
+      <p>🎨 Testez, imaginez, customisez — ici, c’est vous le créateur !</p>
+    </div>
+  </section>
 </body>
 </html>
