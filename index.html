@@ -9,17 +9,11 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
+      background-image: url('fond_stylise.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
       color: white;
-      background: black;
-    }
-    video.bg-video {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: -1;
     }
     .main-cover {
       width: 100%;
@@ -133,11 +127,6 @@
   </style>
 </head>
 <body>
-  <video class="bg-video" autoplay muted loop playsinline poster="fond_stylise.png">
-    <source src="video_background_mycustolab.mp4" type="video/mp4">
-    Votre navigateur ne supporte pas les vidéos HTML5.
-  </video>
-
   <img src="mycustolabcleanedcoverqr.png" alt="MYCUSTO'LAB Visuel principal" class="main-cover">
 
   <header>
@@ -152,41 +141,4 @@
 
   <section class="qr-section">
     <p>Scanne-moi pour suivre nos actus !</p>
-    <img src="qr_mycustolab_facebook.png" alt="QR Code Facebook">
-  </section>
-
-  <section class="produits">
-    <h2>Quelques créations signées MYCUSTO'LAB</h2>
-    <div class="galerie">
-      <img src="20250712_112227.jpg" alt="Plaque personnalisée boîte aux lettres">
-      <img src="20250712_112455.jpg" alt="Plaque boîte aux lettres zoom">
-      <img src="tasse apero 1.jpg" alt="Tasse personnalisée apéro 1">
-      <img src="tasse apero 2.jpg" alt="Tasse personnalisée apéro 2">
-      <img src="tasse apero 3.jpg" alt="Tasse personnalisée apéro 3">
-    </div>
-  </section>
-
-  <section class="newsletter">
-    <h2>📬 Reste informé(e) du lancement</h2>
-    <form action="mailto:grem86@outlook.com" method="POST" enctype="text/plain">
-      <input type="email" name="email" placeholder="Votre adresse email" required><br>
-      <button type="submit">Je m’inscris</button>
-    </form>
-  </section>
-
-  <section class="apropos">
-    <div class="contenu">
-      <h2>À propos de MYCUSTO'LAB</h2>
-      <p>Bienvenue dans l’univers MYCUSTO'LAB, l’atelier de customisation 100 % créatif !</p>
-      <p>Chez MYCUSTO’LAB, chaque expérience est unique : mugs, plaques, textiles et bien plus encore. Vous choisissez ou créez votre design, on le réalise avec passion.</p>
-      <p>On mélange fun, style, et qualité artisanale pour créer des pièces personnalisées qui ne ressemblent qu’à vous.</p>
-      <p>🎨 Testez, imaginez, customisez — ici, c’est vous le créateur !</p>
-    </div>
-  </section>
-
-  <div class="messaging-buttons">
-    <a href="https://wa.me/32471733371" target="_blank"><img src="whatsapp_icon.png" alt="WhatsApp"></a>
-    <a href="https://m.me/gremceunen?hash=Aba9TT2pTzJVay-r&source=qr_link_share" target="_blank"><img src="messenger_icon.png" alt="Messenger"></a>
-  </div>
-</body>
-</html>
+    <img src="qr_mycustolab_facebook.png" alt="QR Code Face
