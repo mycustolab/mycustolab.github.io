@@ -5,23 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MYCUSTO'LAB - Site Officiel</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      background-color: #f6f6f6;
-      color: #333;
-    }
     @keyframes fadeIn {
       0% { opacity: 0; transform: translateY(30px); }
       100% { opacity: 1; transform: translateY(0); }
+    }
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: url('fond_stylise.png') center/cover no-repeat;
+      color: white;
+    }
+    .social-icons img {
+      width: 32px;
+      margin: 0 10px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .gallery img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     }
   </style>
 </head>
 <body>
 
+  <!-- HEADER -->
+  <header style="text-align: center; padding: 80px 20px 40px;">
+    <img src="mycustolabcleanedcoverqr.png" alt="MYCUSTO'LAB logo" style="max-width: 300px; width: 90%;">
+    <h1 style="font-size: 2em; font-family: 'Montserrat', sans-serif; margin: 10px 0 5px;">LIBÈRE TON STYLE, CRÉE TA PIÈCE</h1>
+    <p style="font-size: 1.1em;">Site en préparation</p>
+  </header>
+
+  <!-- RÉSEAUX SOCIAUX -->
+  <div style="text-align: center; margin-bottom: 30px;" class="social-icons">
+    <a href="https://www.facebook.com/share/1C25" target="_blank"><img src="facebook_icon.png" alt="Facebook"></a>
+    <a href="#"><img src="instagram_icon.png" alt="Instagram"></a>
+    <a href="#"><img src="tiktok_icon.png" alt="TikTok"></a>
+  </div>
+
+  <!-- GALERIE PRODUITS -->
+  <section class="gallery">
+    <img src="20250712_112227.jpg" alt="Mug personnalisé">
+    <img src="20250712_112455.jpg" alt="Mug apéro côté">
+    <img src="mycustolabcleanedcoverqr.png" alt="Mockup global produits">
+  </section>
+
   <!-- SECTION À PROPOS -->
-  <section style="position: relative; padding: 60px 20px; background: url('assets/fond_background_apropos_mycustolab.png') center/cover no-repeat; color: white;">
+  <section style="position: relative; padding: 60px 20px; background: url('fond_background_apropos_mycustolab.png') center/cover no-repeat;">
     <div style="max-width: 900px; margin: auto; background-color: rgba(0,0,0,0.6); border-radius: 20px; padding: 40px 30px; box-shadow: 0 10px 25px rgba(0,0,0,0.4); animation: fadeIn 1s ease-in-out;">
       <h2 style="font-size: 2.5em; margin-bottom: 20px; text-align: center; font-family: 'Montserrat', sans-serif;">🧪 À propos de MYCUSTO’LAB</h2>
       <p style="font-size: 1.2em; line-height: 1.6; text-align: center;">
