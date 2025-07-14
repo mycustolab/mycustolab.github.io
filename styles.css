@@ -7,6 +7,37 @@ body {
   background-attachment: fixed;
   color: white;
 }
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-top: 80px;
+  z-index: 100;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar ul li {
+  margin: 20px 0;
+  text-align: center;
+}
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+main {
+  margin-left: 190px;
+  padding: 20px;
+}
+
 header {
   text-align: center;
   padding: 40px 20px 20px;
@@ -36,9 +67,8 @@ h1 {
   margin-top: 15px;
 }
 .social-icons img {
-  width: 48px;
-  margin: 0 10px;
-  vertical-align: middle;
+  width: 40px;
+  margin: 0 8px;
 }
 .btn-contact {
   display: inline-block;
@@ -50,10 +80,12 @@ h1 {
   text-decoration: none;
   font-weight: bold;
 }
+
 .qr-section, .produits, .apropos, .newsletter {
   padding: 40px 20px;
   text-align: center;
 }
+
 .galerie {
   display: flex;
   flex-wrap: wrap;
@@ -61,11 +93,14 @@ h1 {
   gap: 15px;
 }
 .galerie img {
-  width: 260px;
+  max-width: 250px;
+  width: 100%;
   height: auto;
+  object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
+
 .apropos {
   background-image: url('fond_background_apropos_mycustolab.png');
   background-size: cover;
@@ -79,6 +114,7 @@ h1 {
   padding: 30px;
   border-radius: 12px;
 }
+
 .newsletter form {
   margin-top: 20px;
 }
