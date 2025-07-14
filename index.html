@@ -1,158 +1,69 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MYCUSTO'LAB - Accueil</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&family=Pacifico&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      display: flex;
-      background-color: #f3f3f3;
-      color: #333;
-    }
-    .sidebar {
-      width: 220px;
-      background: #1e1e1e;
-      color: white;
-      padding: 20px;
-      height: 100vh;
-      position: fixed;
-    }
-    .sidebar h2 {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.8rem;
-      margin-bottom: 20px;
-    }
-    .sidebar ul {
-      list-style: none;
-      padding: 0;
-    }
-    .sidebar ul li {
-      margin: 15px 0;
-    }
-    .sidebar ul li a {
-      text-decoration: none;
-      color: white;
-      transition: color 0.3s;
-    }
-    .sidebar ul li a:hover {
-      color: #ffcc00;
-    }
-    .sidebar .social-icons {
-      margin-top: 30px;
-    }
-    .sidebar .social-icons img {
-      width: 30px;
-      margin: 5px;
-    }
-    main {
-      margin-left: 220px;
-      width: calc(100% - 220px);
-      padding: 20px;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    .main-cover {
-      width: 100%;
-      max-height: 300px;
-      object-fit: cover;
-      border-radius: 12px;
-    }
-    .slogan {
-      font-size: 1.8rem;
-      font-family: 'Pacifico', cursive;
-      color: #222;
-      margin-top: 10px;
-    }
-    .info {
-      font-weight: bold;
-      font-size: 1.1rem;
-      margin-top: 10px;
-      background-color: #ffcc00;
-      color: #000;
-      display: inline-block;
-      padding: 8px 15px;
-      border-radius: 8px;
-    }
-    .qr-section {
-      text-align: center;
-      margin: 40px 0;
-    }
-    .qr-section img {
-      max-width: 180px;
-    }
-    .produits {
-      margin: 50px 0;
-    }
-    .produits h2 {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 30px;
-    }
-    .galerie {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 0 20px;
-    }
-    .galerie img {
-      width: 100%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-    .apropos {
-      background: #fff6e5;
-      padding: 40px 20px;
-      border-top: 2px solid #ffcc00;
-    }
-    .apropos .contenu {
-      max-width: 800px;
-      margin: auto;
-      text-align: center;
-    }
-    .apropos h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-    .apropos p {
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-    .newsletter {
-      text-align: center;
-      margin-top: 50px;
-      background-color: #1e1e1e;
-      color: white;
-      padding: 40px 20px;
-    }
-    .newsletter input {
-      padding: 10px;
-      margin: 10px;
-      width: 250px;
-      border-radius: 5px;
-      border: none;
-    }
-    .newsletter button {
-      padding: 10px 20px;
-      background-color: #ffcc00;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-    .newsletter button:hover {
-      background-color: #ffdd33;
-    }
-  </style>
 </head>
 <body>
-  <!-- contenu identique conservé -->
+  <header>
+    <img src="mycustolabcleanedcoverqr.png" alt="MYCUSTO'LAB couverture" class="main-cover">
+    <h1 class="hidden">MYCUSTO'LAB</h1>
+    <p class="slogan">Exprime ta créativité, on réalise ta réalité</p>
+    <p class="info">Notre site e-commerce est en construction et sera très bientôt disponible.</p>
+    <nav class="social-menu">
+      <a href="https://www.facebook.com/profile.php?id=61558012416694" target="_blank"><img src="facebook_icon.png" alt="Facebook"></a>
+      <a href="#"><img src="instagram_icon.png" alt="Instagram"></a>
+      <a href="https://wa.me/32471733371" target="_blank"><img src="whatsapp_icon.png" alt="WhatsApp"></a>
+      <a href="https://m.me/gremceunen?hash=Aba9TT2pTzJVay-r&source=qr_link_share" target="_blank"><img src="messenger_icon.png" alt="Messenger"></a>
+    </nav>
+    <a href="boutique.html" class="btn-contact">Accéder à la boutique</a>
+  </header>
+
+  <aside class="menu-lateral">
+    <ul>
+      <li><a href="#galerie">Galerie</a></li>
+      <li><a href="#apropos">A propos</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </aside>
+
+  <section class="qr-section">
+    <p>Scanne-moi pour suivre nos actus !</p>
+    <img src="qr_mycustolab_facebook.png" alt="QR Code Facebook">
+  </section>
+
+  <section class="produits" id="galerie">
+    <h2>Galerie de créations</h2>
+    <div class="galerie">
+      <img src="20250712_112227.jpg" alt="Plaque personnalisée boîte aux lettres">
+      <img src="20250712_112455.jpg" alt="Plaque boîte aux lettres zoom">
+      <img src="tasse apero 1.jpg" alt="Tasse personnalisée apéro 1">
+      <img src="tasse apero 2.jpg" alt="Tasse personnalisée apéro 2">
+      <img src="tasse apero 3.jpg" alt="Tasse personnalisée apéro 3">
+    </div>
+  </section>
+
+  <section class="apropos" id="apropos">
+    <div class="contenu">
+      <h2>À propos de MYCUSTO'LAB</h2>
+      <p>Bienvenue dans l’univers MYCUSTO'LAB, l’atelier de customisation 100 % créatif !</p>
+      <p>Chez MYCUSTO’LAB, chaque expérience est unique : mugs, plaques, textiles et bien plus encore. Vous choisissez ou créez votre design, on le réalise avec passion.</p>
+      <p>On mélange fun, style, et qualité artisanale pour créer des pièces personnalisées qui ne ressemblent qu’à vous.</p>
+      <p>🎨 Testez, imaginez, customisez — ici, c’est vous le créateur !</p>
+    </div>
+  </section>
+
+  <section id="contact" class="newsletter">
+    <h2>Reste informé !</h2>
+    <p>Inscris-toi à la newsletter pour suivre nos nouveautés</p>
+    <form>
+      <input type="text" placeholder="Ton prénom" required>
+      <input type="email" placeholder="Ton e-mail" required>
+      <button type="submit">S'inscrire</button>
+    </form>
+  </section>
 </body>
 </html>
