@@ -1,4 +1,4 @@
-/* Styles généraux */
+/* --- Fond général et typographies --- */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -7,114 +7,216 @@ body {
   color: white;
 }
 
-/* Menu latéral */
+/* --- Menu latéral --- */
 nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 70px;
   height: 100%;
-  background-color: rgba(0,0,0,0.7);
+  width: 180px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20px;
-  z-index: 1000;
-}
-nav a {
-  margin: 10px 0;
-}
-nav img {
-  width: 30px;
-  height: 30px;
+  z-index: 100;
 }
 
-/* Header */
-header {
-  margin-left: 70px;
-  padding: 40px 20px 20px;
-  text-align: center;
-}
-header img.main-cover {
-  max-width: 300px;
-  margin-bottom: 20px;
-}
-header h1 {
-  display: none;
-}
-header .slogan {
-  font-size: 2rem;
+nav a {
+  color: white;
+  text-decoration: none;
   font-weight: bold;
-  background-color: rgba(0,0,0,0.5);
+  margin: 15px 0;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+nav .social-icons {
+  margin-top: 40px;
+}
+
+nav .social-icons img {
+  width: 28px;
+  margin: 8px;
+  transition: transform 0.3s;
+}
+
+nav .social-icons img:hover {
+  transform: scale(1.2);
+}
+
+/* --- Contenu général décalé à droite --- */
+main {
+  margin-left: 190px;
+  padding: 20px;
+}
+
+/* --- Header principal --- */
+header {
+  text-align: center;
+  padding: 20px 0 10px;
+}
+
+header .main-cover {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  display: none; /* Retiré car déjà remplacé par le logo visuel */
+}
+
+.slogan {
+  font-size: 1.8rem;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.4);
   display: inline-block;
   padding: 10px 20px;
-  border-radius: 10px;
-}
-header .info {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-top: 10px;
+  border-radius: 8px;
 }
 
-/* Sections */
-section {
-  margin-left: 70px;
-  padding: 40px 20px;
+.info {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+/* --- QR Code section --- */
+.qr-section {
   text-align: center;
+  padding: 30px 10px;
 }
 
 .qr-section img {
-  width: 180px;
+  max-width: 180px;
   height: auto;
+  margin-top: 10px;
 }
 
+/* --- Galerie --- */
 .produits {
-  background-color: rgba(0,0,0,0.3);
-  border-radius: 20px;
-  margin: 30px auto;
-  max-width: 1200px;
+  padding: 30px 10px;
+  text-align: center;
 }
+
+.produits h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
 .galerie {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 20px;
-  margin-top: 20px;
+  padding: 0 10px;
 }
+
 .galerie img {
-  width: 220px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.3s;
+}
+
+.galerie img:hover {
+  transform: scale(1.03);
+}
+
+/* --- À propos --- */
+.apropos {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px 20px;
+  margin-top: 30px;
 }
 
 .apropos .contenu {
-  background-color: rgba(0,0,0,0.6);
-  padding: 30px;
   max-width: 700px;
   margin: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px;
   border-radius: 12px;
+  color: white;
+}
+
+.apropos h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+/* --- Newsletter --- */
+.newsletter {
+  padding: 30px 20px;
+  background-color: rgba(255, 255, 255, 0.08);
+  text-align: center;
+}
+
+.newsletter h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 .newsletter form {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 10px;
-  margin-top: 20px;
-}
-.newsletter input, .newsletter button {
-  padding: 10px;
-  width: 80%;
   max-width: 400px;
+  margin: auto;
+}
+
+.newsletter input,
+.newsletter button {
+  padding: 10px;
+  border-radius: 6px;
   border: none;
-  border-radius: 5px;
   font-size: 1rem;
 }
+
+.newsletter input {
+  background-color: white;
+  color: black;
+}
+
 .newsletter button {
-  background-color: #ff9800;
-  color: white;
+  background-color: #ffcc00;
+  color: black;
   font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+  background-color: #e0b800;
+}
+
+/* --- Responsive --- */
+@media screen and (max-width: 768px) {
+  nav {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+
+  main {
+    margin-left: 0;
+    margin-top: 80px;
+  }
+
+  .galerie {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+
+  .slogan {
+    font-size: 1.3rem;
+  }
+
+  .info {
+    font-size: 1rem;
+  }
 }
