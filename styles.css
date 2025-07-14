@@ -7,85 +7,71 @@ body {
   background-attachment: fixed;
   color: white;
 }
-
 header {
   text-align: center;
   padding: 40px 20px 20px;
 }
-
 .main-cover {
   width: 100%;
   max-width: 900px;
   height: auto;
   margin-bottom: 20px;
 }
-
 h1 {
   font-family: 'Bebas Neue', cursive;
   font-size: 3rem;
   margin: 0;
 }
-
 .slogan {
   font-family: 'Pacifico', cursive;
   font-size: 1.5rem;
   margin: 10px 0;
   color: #F5A623;
 }
-
 .info {
   font-size: 1rem;
   margin-top: 10px;
 }
-
 .social-icons {
   margin-top: 15px;
 }
-
 .social-icons img {
-  width: 36px;
+  width: 48px;
   margin: 0 10px;
   vertical-align: middle;
 }
-
-.qr-section, .produits, .apropos {
+.btn-contact {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #F5A623;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.qr-section, .produits, .apropos, .newsletter {
   padding: 40px 20px;
   text-align: center;
 }
-
-.qr-section img {
-  max-width: 180px;
-  height: auto;
-  margin-top: 10px;
-}
-
-.produits h2, .apropos h2 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  font-family: 'Bebas Neue', cursive;
-}
-
 .galerie {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
 }
-
 .galerie img {
-  max-width: 260px;
+  width: 260px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
-
 .apropos {
   background-image: url('fond_background_apropos_mycustolab.png');
   background-size: cover;
   background-position: center;
   color: white;
 }
-
 .apropos .contenu {
   max-width: 700px;
   margin: auto;
@@ -93,8 +79,22 @@ h1 {
   padding: 30px;
   border-radius: 12px;
 }
-
-.apropos p {
-  font-size: 1rem;
-  line-height: 1.6;
+.newsletter form {
+  margin-top: 20px;
+}
+.newsletter input {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  width: 200px;
+}
+.newsletter button {
+  padding: 10px 20px;
+  background: #00B8D9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
 }
