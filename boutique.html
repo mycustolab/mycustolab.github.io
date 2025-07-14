@@ -4,164 +4,186 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MYCUSTO'LAB - Boutique</title>
+  <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background-color: #f3f3f3;
-    }
-    header {
-      background-color: #1e1e1e;
-      color: white;
-      text-align: center;
-      padding: 20px 0;
-    }
-    header h1 {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 2.5rem;
-    }
-    .nav {
-      text-align: center;
-      margin: 20px 0;
-    }
-    .nav a {
-      margin: 0 15px;
-      text-decoration: none;
+      background-image: url('mycustolabcleanedcoverqr.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
       color: #333;
-      font-weight: bold;
     }
-    .nav a:hover {
-      color: #ff6600;
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: rgba(255, 255, 255, 0.85);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
-    .categories {
+
+    header h1 {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      color: #0d2f57;
+    }
+
+    nav {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
-      padding: 20px;
+      gap: 1rem;
+      margin-top: 1rem;
     }
-    .produit {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      padding: 20px;
-      max-width: 280px;
+
+    nav a {
+      text-decoration: none;
+      color: #0d2f57;
+      font-weight: bold;
+    }
+
+    .produits {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 2rem;
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      padding: 1.5rem;
+      width: 300px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       text-align: center;
     }
-    .produit img {
+
+    .card img {
       max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-    .produit h3 {
-      margin: 15px 0 10px;
-      font-size: 1.2rem;
-    }
-    .produit p {
-      font-size: 0.9rem;
-      color: #666;
-    }
-    .produit button {
-      margin-top: 10px;
-      padding: 10px 15px;
-      background-color: #ffcc00;
-      border: none;
-      border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    .produit button:hover {
-      background-color: #ffdd33;
-    }
-    .personnalisation {
-      max-width: 800px;
-      margin: 50px auto;
-      background: #fff;
-      padding: 30px;
+      height: 200px;
+      object-fit: cover;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
-    .personnalisation h2 {
-      text-align: center;
-      margin-bottom: 20px;
+
+    .card h3 {
+      color: #0d2f57;
+      font-size: 1.5rem;
+      margin: 1rem 0 0.5rem;
     }
-    .personnalisation label {
-      display: block;
-      margin: 15px 0 5px;
+
+    .card p {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
     }
-    .personnalisation input, .personnalisation select {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    .personnalisation button {
-      padding: 12px 20px;
-      background-color: #1e1e1e;
+
+    .btn {
+      background-color: #ffa500;
       color: white;
+      padding: 0.6rem 1rem;
       border: none;
-      border-radius: 5px;
+      border-radius: 8px;
       font-weight: bold;
       cursor: pointer;
     }
-    .personnalisation button:hover {
-      background-color: #333;
+
+    .formulaire {
+      background-color: rgba(255, 255, 255, 0.9);
+      margin: 3rem auto;
+      padding: 2rem;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 700px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .formulaire h2 {
+      text-align: center;
+      color: #0d2f57;
+      margin-bottom: 1.5rem;
+    }
+
+    .formulaire label {
+      font-weight: bold;
+      display: block;
+      margin-top: 1rem;
+    }
+
+    .formulaire input,
+    .formulaire select,
+    .formulaire textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .formulaire button {
+      margin-top: 1.5rem;
+      width: 100%;
+      background-color: #0d2f57;
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Boutique MYCUSTO'LAB</h1>
+    <h1>BOUTIQUE MYCUSTO'LAB</h1>
+    <nav>
+      <a href="#">Accueil</a>
+      <a href="#">Mugs</a>
+      <a href="#">Plaques</a>
+      <a href="#">Textiles</a>
+    </nav>
   </header>
 
-  <nav class="nav">
-    <a href="index.html">Accueil</a>
-    <a href="#">Mugs</a>
-    <a href="#">Plaques</a>
-    <a href="#">Textiles</a>
-  </nav>
-
-  <section class="categories">
-    <div class="produit">
-      <img src="tasse_apero_1.jpg" alt="Mug Apéro" />
+  <section class="produits">
+    <div class="card">
+      <img src="tasse_apero_1.jpg" alt="Mug Apéro">
       <h3>Mug Apéro</h3>
-      <p>"J'ai pas le temps, je suis en vacances" - Design fun imprimé en sublimation</p>
-      <button>Commander</button>
+      <p>"J'ai pas le temps, je suis en vacances"<br/>Design fun imprimé en sublimation</p>
+      <button class="btn">Commander</button>
     </div>
-    <div class="produit">
-      <img src="20250712_112227.jpg" alt="Plaque personnalisée" />
+    <div class="card">
+      <img src="20250712_112227.jpg" alt="Plaque personnalisée">
       <h3>Plaque personnalisée</h3>
-      <p>Modèle boîte aux lettres avec finition moderne - 10x5 cm</p>
-      <button>Commander</button>
+      <p>Modèle boîte aux lettres 10x5 cm<br/>Finition moderne</p>
+      <button class="btn">Commander</button>
     </div>
-    <div class="produit">
-      <img src="tshirt_mockup.jpg" alt="Textile personnalisé" />
+    <div class="card">
+      <img src="tshirt_logo.jpg" alt="Textile personnalisé">
       <h3>Tee-shirt créatif</h3>
-      <p>Crée ton tee-shirt unique avec ton propre design ou nos visuels exclusifs</p>
-      <button>Commander</button>
+      <p>Crée ton tee-shirt avec ton design ou nos visuels exclusifs</p>
+      <button class="btn">Commander</button>
     </div>
   </section>
 
-  <section class="personnalisation">
+  <section class="formulaire">
     <h2>Personnalise ton produit</h2>
     <form>
       <label for="type">Type de produit</label>
-      <select id="type" name="type">
+      <select id="type">
         <option>Mug</option>
         <option>Plaque</option>
-        <option>Tee-shirt</option>
+        <option>Textile</option>
       </select>
 
       <label for="texte">Texte souhaité</label>
-      <input type="text" id="texte" name="texte" placeholder="Ton texte personnalisé..." />
+      <input type="text" id="texte" placeholder="Ton texte personnalisé..." />
 
       <label for="couleur">Couleur dominante</label>
-      <input type="color" id="couleur" name="couleur" />
+      <input type="text" id="couleur" placeholder="Ex. : bleu, rouge..." />
 
       <label for="image">Ton image (facultatif)</label>
-      <input type="file" id="image" name="image" />
+      <input type="file" id="image" />
 
       <button type="submit">Envoyer la demande</button>
     </form>
