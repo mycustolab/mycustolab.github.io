@@ -3,156 +3,110 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MYCUSTO'LAB - Accueil</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&family=Pacifico&display=swap" rel="stylesheet">
+  <title>MYCUSTO'LAB - Boutique</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      display: flex;
       background-color: #f3f3f3;
-      color: #333;
-    }
-    .sidebar {
-      width: 220px;
-      background: #1e1e1e;
-      color: white;
-      padding: 20px;
-      height: 100vh;
-      position: fixed;
-    }
-    .sidebar h2 {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.8rem;
-      margin-bottom: 20px;
-    }
-    .sidebar ul {
-      list-style: none;
-      padding: 0;
-    }
-    .sidebar ul li {
-      margin: 15px 0;
-    }
-    .sidebar ul li a {
-      text-decoration: none;
-      color: white;
-      transition: color 0.3s;
-    }
-    .sidebar ul li a:hover {
-      color: #ffcc00;
-    }
-    .sidebar .social-icons {
-      margin-top: 30px;
-    }
-    .sidebar .social-icons img {
-      width: 30px;
-      margin: 5px;
-    }
-    main {
-      margin-left: 220px;
-      width: calc(100% - 220px);
-      padding: 20px;
     }
     header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    .main-cover {
-      width: 100%;
-      max-height: 300px;
-      object-fit: cover;
-      border-radius: 12px;
-    }
-    .slogan {
-      font-size: 1.8rem;
-      font-family: 'Pacifico', cursive;
-      color: #222;
-      margin-top: 10px;
-    }
-    .info {
-      font-weight: bold;
-      font-size: 1.1rem;
-      margin-top: 10px;
-      background-color: #ffcc00;
-      color: #000;
-      display: inline-block;
-      padding: 8px 15px;
-      border-radius: 8px;
-    }
-    .qr-section {
-      text-align: center;
-      margin: 40px 0;
-    }
-    .qr-section img {
-      max-width: 180px;
-    }
-    .produits {
-      margin: 50px 0;
-    }
-    .produits h2 {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 30px;
-    }
-    .galerie {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 0 20px;
-    }
-    .galerie img {
-      width: 100%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-    .apropos {
-      background: #fff6e5;
-      padding: 40px 20px;
-      border-top: 2px solid #ffcc00;
-    }
-    .apropos .contenu {
-      max-width: 800px;
-      margin: auto;
-      text-align: center;
-    }
-    .apropos h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-    .apropos p {
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-    .newsletter {
-      text-align: center;
-      margin-top: 50px;
       background-color: #1e1e1e;
       color: white;
-      padding: 40px 20px;
+      text-align: center;
+      padding: 20px 0;
     }
-    .newsletter input {
-      padding: 10px;
-      margin: 10px;
-      width: 250px;
-      border-radius: 5px;
-      border: none;
+    header h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.5rem;
     }
-    .newsletter button {
-      padding: 10px 20px;
+    .nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .nav a:hover {
+      color: #ff6600;
+    }
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .produit {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      max-width: 280px;
+      text-align: center;
+    }
+    .produit img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .produit h3 {
+      margin: 15px 0 10px;
+      font-size: 1.2rem;
+    }
+    .produit p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+    .produit button {
+      margin-top: 10px;
+      padding: 10px 15px;
       background-color: #ffcc00;
       border: none;
       border-radius: 5px;
-      cursor: pointer;
       font-weight: bold;
+      cursor: pointer;
     }
-    .newsletter button:hover {
+    .produit button:hover {
       background-color: #ffdd33;
     }
   </style>
 </head>
 <body>
-  <!-- contenu identique conservé -->
+  <header>
+    <h1>Boutique MYCUSTO'LAB</h1>
+  </header>
+
+  <nav class="nav">
+    <a href="index.html">Accueil</a>
+    <a href="#">Mugs</a>
+    <a href="#">Plaques</a>
+    <a href="#">Textiles</a>
+  </nav>
+
+  <section class="categories">
+    <div class="produit">
+      <img src="tasse_apero_1.jpg" alt="Mug Apéro" />
+      <h3>Mug Apéro</h3>
+      <p>"J'ai pas le temps, je suis en vacances" - Design fun imprimé en sublimation</p>
+      <button>Commander</button>
+    </div>
+    <div class="produit">
+      <img src="20250712_112227.jpg" alt="Plaque personnalisée" />
+      <h3>Plaque personnalisée</h3>
+      <p>Modèle boîte aux lettres avec finition moderne - 10x5 cm</p>
+      <button>Commander</button>
+    </div>
+    <div class="produit">
+      <img src="tshirt_mockup.jpg" alt="Textile personnalisé" />
+      <h3>Tee-shirt créatif</h3>
+      <p>Crée ton tee-shirt unique avec ton propre design ou nos visuels exclusifs</p>
+      <button>Commander</button>
+    </div>
+  </section>
 </body>
 </html>
